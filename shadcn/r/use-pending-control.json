@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-pending-control",
+  "title": "usePendingControl Hook",
+  "description": "A useControl variant that buffers a pending value locally and only fires onChange when explicitly submitted, with reset and skip-pending support.",
+  "dependencies": [
+    "react"
+  ],
+  "registryDependencies": [
+    "https://gkurt.com/shadcn/r/use-control.json",
+    "https://gkurt.com/shadcn/r/use-stable-callback.json"
+  ],
+  "files": [
+    {
+      "path": "registry/default/hooks/use-pending-control.ts",
+      "content": "import { type DependencyList, type SetStateAction, useRef } from 'react';\nimport { type ControlProps, type ControlValue, useControl } from '#registry/default/hooks/use-control.ts';\nimport { useStableCallback } from '#registry/default/hooks/use-stable-callback.ts';\n\ntype PendingControlProps<T extends ControlValue = ControlValue, TCtx = void> = ControlProps<T, TCtx> & {\n  skipPending?: boolean;\n};\n\nexport function usePendingControl<T extends ControlValue, TCtx = void>({\n  value,\n  defaultValue,\n  finalValue,\n  deps,\n  onChange,\n  skipPending = false,\n}: PendingControlProps<T, TCtx>) {\n  deps = [value, ...(deps || [])] as DependencyList;\n  const [pendingValue, setPendingValue] = useControl<T, TCtx>({\n    defaultValue: typeof value === 'undefined' ? defaultValue : value,\n    finalValue,\n    deps,\n  });\n\n  const isPending = useRef(false);\n\n  const submit = useStableCallback((val?: SetStateAction<T>, ctx?: TCtx) => {\n    if (!isPending.current && typeof val === 'undefined') return;\n    isPending.current = false;\n    onChange?.(typeof val === 'undefined' ? pendingValue : val, ctx);\n  });\n\n  const reset = useStableCallback((ctx?: TCtx) => {\n    isPending.current = false;\n    setPendingValue(\n      typeof value === 'undefined' ? (typeof defaultValue === 'undefined' ? finalValue! : defaultValue) : value,\n      ctx\n    );\n  });\n\n  const handleChange = useStableCallback((val: SetStateAction<T>, ctx?: TCtx) => {\n    if (skipPending) return submit(val, ctx);\n    isPending.current = true;\n    setPendingValue(val, ctx);\n  });\n\n  return [pendingValue, handleChange, { submit, reset }] as const;\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

@@ -14,7 +14,7 @@
   "files": [
     {
       "path": "registry/default/hooks/use-immer-control.ts",
-      "content": "import { type Draft, produce } from 'immer';\nimport { type ControlProps, useControl } from '#registry/default/hooks/use-control.ts';\nimport { useStableCallback } from '#registry/default/hooks/use-stable-callback.ts';\n\ntype ImmerSetStateAction<S> = S | ((prevState: Draft<S>) => void);\n\n/** A `useControl` variant that accepts Immer recipe updaters. */\nexport function useImmerControl<T, TCtx = void>(props: ControlProps<T, TCtx>) {\n  const [value, setValue] = useControl<T, TCtx>(props);\n  const handleChange = useStableCallback((val: ImmerSetStateAction<T>, ctx?: TCtx) =>\n    setValue(current => (typeof val === 'function' ? produce(current, val as any) : val), ctx)\n  );\n  return [value, handleChange] as const;\n}\n",
+      "content": "import { type Draft, produce } from 'immer';\nimport { type ControlProps, type ControlValue, useControl } from '#registry/default/hooks/use-control.ts';\nimport { useStableCallback } from '#registry/default/hooks/use-stable-callback.ts';\n\ntype ImmerSetStateAction<S> = S | ((prevState: Draft<S>) => void);\n\n/** A `useControl` variant that accepts Immer recipe updaters. */\nexport function useImmerControl<T extends ControlValue, TCtx = void>(props: ControlProps<T, TCtx>) {\n  const [value, setValue] = useControl<T, TCtx>(props);\n  const handleChange = useStableCallback((val: ImmerSetStateAction<T>, ctx?: TCtx) =>\n    setValue(current => (typeof val === 'function' ? produce(current, val as any) : val), ctx)\n  );\n  return [value, handleChange] as const;\n}\n",
       "type": "registry:hook"
     }
   ],

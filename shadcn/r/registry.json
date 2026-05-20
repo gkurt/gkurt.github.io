@@ -36,6 +36,7 @@
         "https://gkurt.com/shadcn/r/use-array-control.json",
         "https://gkurt.com/shadcn/r/use-record-control.json",
         "https://gkurt.com/shadcn/r/use-immer-control.json",
+        "https://gkurt.com/shadcn/r/use-pending-control.json",
         "https://gkurt.com/shadcn/r/remove-default-colors.json",
         "https://gkurt.com/shadcn/r/scroll-utils.json"
       ]
@@ -410,6 +411,23 @@
       "files": [
         {
           "path": "registry/default/hooks/use-immer-control.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "use-pending-control",
+      "type": "registry:hook",
+      "title": "usePendingControl Hook",
+      "description": "A useControl variant that buffers a pending value locally and only fires onChange when explicitly submitted, with reset and skip-pending support.",
+      "dependencies": ["react"],
+      "registryDependencies": [
+        "https://gkurt.com/shadcn/r/use-control.json",
+        "https://gkurt.com/shadcn/r/use-stable-callback.json"
+      ],
+      "files": [
+        {
+          "path": "registry/default/hooks/use-pending-control.ts",
           "type": "registry:hook"
         }
       ]
