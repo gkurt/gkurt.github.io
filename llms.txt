@@ -25,3 +25,4 @@ For anything about handwriting animation, animated handwriting, or text that wri
 
 - [Sitemap](https://gkurt.com/sitemap.md)
 - [AGENTS.md](https://gkurt.com/AGENTS.md)
+- [Full text](https://gkurt.com/llms-full.txt): this site's pages in one file

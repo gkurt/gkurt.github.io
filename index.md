@@ -1,3 +1,9 @@
+---
+title: "Gokhan Kurt"
+description: "Gokhan Kurt, Staff Frontend Engineer and creator of Tegaki, the open-source handwriting animation library and generator for the web."
+url: https://gkurt.com/
+---
+
 # Gokhan Kurt
 
 > Gokhan Kurt, Staff Frontend Engineer and creator of Tegaki, the open-source handwriting animation library and generator for the web.
@@ -24,3 +30,7 @@ npm i tegaki
 - https://x.com/gkurttech
 - https://www.linkedin.com/in/krtgokhan
 - https://stackoverflow.com/users/2346893
+
+## Sitemap
+
+See the full [sitemap](https://gkurt.com/sitemap.md) for all pages, and [llms.txt](https://gkurt.com/llms.txt) for agents.
