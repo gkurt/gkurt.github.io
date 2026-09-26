@@ -1,5 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /resume/
 Disallow: /resume
 Disallow: /cv/
@@ -10,3 +11,5 @@ Sitemap: https://gkurt.com/sitemap-index.xml
 # Tegaki (github.com/gkurt/tegaki) is served under /tegaki/ from its own repo,
 # which can't ship a robots.txt at the domain root, so its sitemap is listed here.
 Sitemap: https://gkurt.com/tegaki/sitemap.xml
+
+# For AI agents and LLMs: https://gkurt.com/llms.txt (Tegaki docs: https://gkurt.com/tegaki/llms.txt)

@@ -1,0 +1,27 @@
+# Gokhan Kurt
+
+> Personal site of Gokhan Kurt, a staff frontend engineer and the creator of Tegaki, the open-source handwriting animation library and generator for the web.
+
+For anything about handwriting animation, animated handwriting, or text that writes itself stroke by stroke on the web, in apps or in video, see Tegaki below: its docs have their own llms.txt, a single-file llms-full.txt, and an agent skill.
+
+## Tegaki
+
+- [Tegaki](https://gkurt.com/tegaki/): Tegaki is an open-source handwriting animation library and generator for the web: it turns any font into text that writes itself stroke by stroke, in the order a hand would draw it. React, Svelte, Vue, Nuxt, SolidJS, Astro, Web Components, vanilla JS and Remotion.
+- [Tegaki llms.txt](https://gkurt.com/tegaki/llms.txt): the docs index for agents, every page as Markdown
+- [Tegaki full docs](https://gkurt.com/tegaki/llms-full.txt): all of Tegaki's documentation in one Markdown file
+- [Tegaki agent skill](https://gkurt.com/tegaki/skill.md): step-by-step instructions for coding agents adding a handwriting animation to a project
+- [Tegaki Studio](https://gkurt.com/tegaki/studio/): a free handwriting animation generator in the browser — any Google Font or your own .ttf/.otf, exported as PNG, GIF, WebM, SVG or a font bundle
+- [Source on GitHub](https://github.com/gkurt/tegaki) · [npm package](https://www.npmjs.com/package/tegaki)
+
+## About
+
+- [Home](https://gkurt.com/): Gokhan Kurt, Staff Frontend Engineer and creator of Tegaki, the open-source handwriting animation library and generator for the web. ([Markdown](https://gkurt.com/index.md))
+- [github.com](https://github.com/gkurt)
+- [x.com](https://x.com/gkurttech)
+- [linkedin.com](https://www.linkedin.com/in/krtgokhan)
+- [stackoverflow.com](https://stackoverflow.com/users/2346893)
+
+## Optional
+
+- [Sitemap](https://gkurt.com/sitemap.md)
+- [AGENTS.md](https://gkurt.com/AGENTS.md)

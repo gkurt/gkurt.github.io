@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "tegaki-handwriting-animation",
+      "type": "skill-md",
+      "description": "Add a handwriting animation (text that writes itself stroke by stroke) to a web app or video with the tegaki npm package, in React, Next.js, Svelte, Vue, Nuxt, SolidJS, Astro, Web Components, vanilla JS or Remotion.",
+      "url": "https://gkurt.com/tegaki/skill.md",
+      "digest": "sha256:329c33bf46a36105317567842dc6364fb333393c8346749ef38ec850fb23ca19"
+    }
+  ]
+}
