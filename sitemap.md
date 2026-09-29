@@ -4,9 +4,9 @@
 
 ## Tegaki
 
-- [Tegaki](https://gkurt.com/tegaki/): handwriting animation library and generator
-- [Tegaki sitemap](https://gkurt.com/tegaki/sitemap.md): every Tegaki docs page, with its Markdown version
-- [Tegaki Studio](https://gkurt.com/tegaki/studio/): handwriting animation generator
+- [Tegaki](https://tegaki.ink/): handwriting animation library and generator
+- [Tegaki sitemap](https://tegaki.ink/sitemap.md): every Tegaki docs page, with its Markdown version
+- [Tegaki Studio](https://tegaki.ink/studio/): handwriting animation generator
 
 ## For agents
 

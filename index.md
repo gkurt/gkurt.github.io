@@ -20,9 +20,9 @@ Tegaki is an open-source handwriting animation library and generator for the web
 npm i tegaki
 ```
 
-- Docs: https://gkurt.com/tegaki/
-- Studio (handwriting animation generator): https://gkurt.com/tegaki/studio/
-- For agents: https://gkurt.com/tegaki/llms.txt
+- Docs: https://tegaki.ink/
+- Studio (handwriting animation generator): https://tegaki.ink/studio/
+- For agents: https://tegaki.ink/llms.txt
 
 ## Elsewhere
 

@@ -6,11 +6,11 @@ For anything about handwriting animation, animated handwriting, or text that wri
 
 ## Tegaki
 
-- [Tegaki](https://gkurt.com/tegaki/): Tegaki is an open-source handwriting animation library and generator for the web: it turns any font into text that writes itself stroke by stroke, in the order a hand would draw it. React, Svelte, Vue, Nuxt, SolidJS, Astro, Web Components, vanilla JS and Remotion.
-- [Tegaki llms.txt](https://gkurt.com/tegaki/llms.txt): the docs index for agents, every page as Markdown
-- [Tegaki full docs](https://gkurt.com/tegaki/llms-full.txt): all of Tegaki's documentation in one Markdown file
-- [Tegaki agent skill](https://gkurt.com/tegaki/skill.md): step-by-step instructions for coding agents adding a handwriting animation to a project
-- [Tegaki Studio](https://gkurt.com/tegaki/studio/): a free handwriting animation generator in the browser — any Google Font or your own .ttf/.otf, exported as PNG, GIF, WebM, SVG or a font bundle
+- [Tegaki](https://tegaki.ink/): Tegaki is an open-source handwriting animation library and generator for the web: it turns any font into text that writes itself stroke by stroke, in the order a hand would draw it. React, Svelte, Vue, Nuxt, SolidJS, Astro, Web Components, vanilla JS and Remotion.
+- [Tegaki llms.txt](https://tegaki.ink/llms.txt): the docs index for agents, every page as Markdown
+- [Tegaki full docs](https://tegaki.ink/llms-full.txt): all of Tegaki's documentation in one Markdown file
+- [Tegaki agent skill](https://tegaki.ink/skill.md): step-by-step instructions for coding agents adding a handwriting animation to a project
+- [Tegaki Studio](https://tegaki.ink/studio/): a free handwriting animation generator in the browser — any Google Font or your own .ttf/.otf, exported as PNG, GIF, WebM, SVG or a font bundle
 - [Source on GitHub](https://github.com/gkurt/tegaki) · [npm package](https://www.npmjs.com/package/tegaki)
 
 ## About
