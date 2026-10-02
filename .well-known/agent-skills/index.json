@@ -5,7 +5,8 @@
       "name": "tegaki-handwriting-animation",
       "type": "skill-md",
       "description": "Add a handwriting animation (text that writes itself stroke by stroke) to a web app or video with the tegaki npm package, in React, Next.js, Svelte, Vue, Nuxt, SolidJS, Astro, Web Components, vanilla JS or Remotion.",
-      "url": "https://tegaki.ink/skill.md"
+      "url": "https://tegaki.ink/skill.md",
+      "digest": "sha256:acea861946d4bc83ce4159d94b3424cfd477437e525c8aed18c1a57c04e91801"
     }
   ]
 }
